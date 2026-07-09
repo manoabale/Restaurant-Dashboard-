@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Restaurant Dashboard</h2>
+    <ul>
+      <li>🍽️ Reservations</li>
+      <li>🛒 Orders</li>
+      <li>💵 Revenue</li>
+      <li>📈 Reports</li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <header>
+      <h1>Restaurant Management</h1>
+      <button id="refresh">Refresh</button>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Reservations</h3>
+        <p id="reservations-count">120</p>
+      </div>
+      <div class="card">
+        <h3>Orders</h3>
+        <p id="orders-count">450</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p id="revenue">$12,300</p>
+      </div>
+    </section>
+
+    <section class="chart">
+      <canvas id="restaurantChart"></canvas>
+    </section>
+
+    <section class="table">
+      <h2>Recent Orders</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Customer</th>
+            <th>Item</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-07-08</td>
+            <td>John Doe</td>
+            <td>Pizza</td>
+            <td>Delivered</td>
+          </tr>
+          <tr>
+            <td>2026-07-09</td>
+            <td>Mary Johnson</td>
+            <td>Pasta</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>2026-07-09</td>
+            <td>James Brown</td>
+            <td>Burger</td>
+            <td>Preparing</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
